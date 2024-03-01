@@ -1,0 +1,530 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 98%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background: linear-gradient(to bottom, #FBEFDA 0%, #FBEFDA 30%, #930019 30%, #930019 60%,#FBEFDA 60%,#FBEFDA 91.7%, #930019 91.7%, #930019 100%);
+   
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.fa-face-laugh-beam {
+    font-size: 30px;
+    margin-top: 4.3%;
+    margin-left: 2%;
+}
+
+header {
+    background-color: #FBEFDA;
+    height: 70px;
+    margin-left: 0px;
+}
+
+.name {
+    margin-top: 25px;
+    font-size: large;
+    margin-left: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap:0px;
+    justify-content: space-between;
+   align-items: center;
+   width: 97%;
+   
+}
+
+
+
+.image1 {
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    border-radius: 50%;
+    border: 3px solid black;
+    margin-top: 50px;
+}
+
+.img01,
+.img02 {
+    height: 500px;
+    width: 500px;
+}
+.container1{
+    background-color: #FBEFDA;
+    width: 90%;
+}
+.img03 {
+    height: 580px;
+    width: 500px;
+}
+
+.image_section {
+    margin-left: 40%;
+}
+.image1:hover{
+    scale: 1.1;
+}
+.text_content {
+    text-align: center;
+    line-height: 1.7;
+    word-spacing: 3px;
+    margin-top: 90px;
+    color: #fff;
+}
+
+.Description h1 {
+    font-size: xx-large;
+}
+
+
+
+.skills_section {
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 1.7;
+    word-spacing: 2px;
+    color: #fff;
+}
+
+.projects_section {
+    line-height: 1.7;
+    word-spacing: 3px;
+}
+
+
+
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.html {
+    width: 80%;
+    background-color: #4D0111;
+}
+
+.css {
+    width: 80%;
+    background-color: #CC9759;
+}
+
+.js {
+    width: 50%;
+    background-color: #4D0111;
+}
+
+.python {
+    width: 50%;
+    background-color: #CC9759;
+}
+
+.login_page {
+    height: 500px;
+    width: 450px;
+    border-radius: 50px;
+}
+
+
+
+.project_thumbnail {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    width: 400px;
+    height: 400px;
+}
+.project_text {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000; /* Adjust the text color */
+    text-align: center;
+    opacity: 1; /* Adjust the text opacity */
+    pointer-events: none; /* Make sure the text doesn't interfere with hover */
+    font-size: larger;
+    font-family: 'Roboto',sans-serif;
+    word-spacing: 3px;
+}
+.projects_section h3 {
+    margin-left: 20px;
+    margin-top: 120px;
+}
+
+.project:hover .project_thumbnail {
+    transform: scale(1.1);
+}
+
+.project_hover {
+    position: absolute;
+    bottom: 2.5%;
+    left: 0;
+    width: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease, height 0.3s ease; 
+    background-color: rgba(147, 0, 25, 0.8); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height:50%; 
+}
+
+.project:hover .project_hover {
+    opacity: 1;
+    height: 100%; 
+    width: 100%;
+}
+
+.project_hover a {
+    color: #CC9759;
+    text-decoration: none;
+    margin-top: 10%;
+    transform: translateY(100%);
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: block; /* Ensure the button is displayed as a block element */
+    font-size: 16px; /* Adjust the font size */
+}
+
+.project:hover .project_hover a {
+    transform: translateY(0);
+    color: #fff;
+}
+.project_hover a:hover{
+  
+    text-decoration: underline;
+}
+.resume_section,.contact_section,footer{
+    margin-left: 20px;
+    word-spacing: 3px;
+    line-height: 1.7;
+    text-align: center;
+   
+}
+.contact_section,footer{color: #fff;}
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #930019;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+.download-button2{
+    
+    margin-left: 40%;
+    background-color: #930019;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    height: 40px;
+    width: 140px;
+    margin-top: 15px;
+}
+.download-button:hover,.download-button2:hover {
+    background-color: #6d0114; /* Change color on hover */
+}
+.Description {
+    text-align: center;
+    margin-top: 100px;
+    line-height: 1.5;
+    word-spacing: 3px;
+    
+}
+.gif {
+    margin-left: 30%;
+    margin-top: 70px;
+    color: #930019;
+  
+}
+.project {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin-left: 7%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+
+@media (min-width: 768px)  {
+    
+    .Description {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .image_section {
+        margin-left: 40%;
+        margin-right: 40%;
+    }
+
+    .text_content {
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: large;
+    }
+
+    .Description p {
+        font-size: 20px;
+    }
+
+    .Description h1 {
+        font-size:50px;
+    }
+
+    .image1 {
+        height: 250px;
+        width: 250px;
+        text-align: center;
+        border-radius: 50%;
+        border: 3px solid black;
+    }
+
+    .gif {
+        margin-top: 10%;
+        margin-left:30%;
+        height: auto;
+        width: 550px;
+    }
+
+    .skills_section {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 8%;
+        width: 90%;
+        font-size: larger;
+    }
+    .projects_section h3{
+        margin-left: 10%;
+        margin-top:5%;
+    }
+    .project {
+        margin-top: 6%;
+        margin-left: 4%;
+    }
+    .download-button2{
+        margin-left:70%;
+    }
+    body{
+        background: linear-gradient(to bottom, #FBEFDA 0%, #FBEFDA 30%, #930019 30%, #930019 68%,#FBEFDA 68%,#FBEFDA 92%, #930019 92%, #930019 100%);
+        width: 100%;
+    }
+    .project1{
+        display: flex;
+        flex-direction: row;
+        gap: 3px;
+        margin-top: 0%;
+        margin-bottom: 2%;
+        margin-left: 10%;
+        margin-right: 20%;
+    }
+    .name{
+        font-size:x-large;
+        margin-right:70%;
+        margin-bottom: -2%;
+    }
+    .download-button2{
+        margin-left: -10%;
+        margin-bottom: -2%;
+    }
+    .resume_section,footer,.contact_section{
+        text-align: center;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .contact_section{
+        margin-top: 10%;
+    }
+}
+
+    
+
+    
+@media (max-width:767px) and (min-width:481px)   { 
+    .name{
+        font-size: 13px;
+    }
+    .gif {
+        margin-top: 10%;
+        margin-left:10%;
+        height: auto;
+        width: 550px;
+    }
+    .skills_section {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 8%;
+        width: 80%;
+        font-size: larger;
+    }
+    .project1{
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 3%;
+    }
+   
+}
+@media (min-width:320px) and (max-width:480px){
+    .Description {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .image_section {
+        margin-left: 35%;
+    }
+
+    .text_content {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .container{
+        width: 98%;
+    }
+    .skills_section {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 8%;
+        width: 100%;
+       
+    }
+
+    .image1 {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        border: 3px solid black;
+    }
+
+    .gif {
+        margin-top: 10%;
+        margin-left:10%;
+        height: auto;
+        width: 330px;
+    }
+
+    .skills_section {
+        margin: 10%;
+       
+        
+    }
+    .projects_section h3{
+        margin-left: 10%;
+        
+        margin-top: 10%;
+    }
+    .project {
+        margin-top: 5%;
+        margin-left: 0%;
+        
+    }
+    .download-button2{
+        margin-left:0%;
+       
+    }
+    body{
+        background: linear-gradient(to bottom, #FBEFDA 0%, #FBEFDA 30%, #930019 30%, #930019 58%,#FBEFDA 58%,#FBEFDA 90.8%, #930019 90.8%, #930019 100%);
+        width:98%;
+    }
+    .project1{
+        margin-top: 0%;
+    }
+    .name{
+        font-size:large;
+        margin-left:-5%;
+        margin-bottom: 1%;
+    }
+    
+    
+}
+@media (min-width:200px) and (max-width:319px){
+    .Description {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .image_section {
+        margin-left: 25%;
+    }
+
+    .text_content {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    
+
+    .image1 {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        border: 3px solid black;
+    }
+
+    .gif {
+        margin-top: 10%;
+        margin-left:5%;
+        height: auto;
+        width: 230px;
+    }
+
+    .skills_section {
+        margin: 5%;
+        
+    }
+    .projects_section h3{
+        margin-left: 5%;
+        
+        margin-top: 10%;
+    }
+    .project {
+        margin-top: 5%;
+        margin-left: 0%;
+        
+    }
+    .download-button2{
+        margin-left:0%;
+        width: 100px;
+    }
+    body{
+        background: linear-gradient(to bottom, #FBEFDA 0%, #FBEFDA 30%, #930019 30%, #930019 56.5%,#FBEFDA 56.5%,#FBEFDA 90%, #930019 90%, #930019 100%);
+        width:100%;
+    }
+    .project1{
+        margin-top: 0%;
+    }
+    .name{
+        font-size:smaller;
+        margin-left:-3%;
+        margin-bottom: 1%;
+    }
+    .project_thumbnail{
+        width: 250px;
+    }
+    .project_text{
+        text-align: left;
+        margin-left: -27%;
+    }
+    
+}
