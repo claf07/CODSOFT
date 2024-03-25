@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+.calculator {
+  border: none;
+  padding: 10px;
+  border-radius: 1em;
+  height: 400px;
+  width: 450px;
+  margin: auto;
+  background-color: #d5a3c48c;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.display-box {
+  
+  background-color: #e5a9d3a2;
+  border: none;
+  color: black;
+  border-radius: 5px;
+  width: 98%;
+  height: 65%;
+}
+
+#btn {
+  background-color: #b8688b;
+  border: none;
+}
+
+input[type=button] {
+  border: none;
+  background-color: #ad8dc4;
+  color: white;
+   width: 100%;
+  border-radius: 5px;
+  height: 70%;
+  outline: none;
+}
+
